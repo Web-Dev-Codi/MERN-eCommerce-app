@@ -1,0 +1,15 @@
+{
+  "name": "proshop-v2",
+  "version": "1.0.0",
+  "description": "eCommerce-Shop",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "author": "Web-Dev-Codi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
