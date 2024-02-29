@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
 import axios from "axios";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { Row, Col, Image, ListGroup, Card, Button } from "react-bootstrap";
 import Rating from "../components/Rating";
+import product from "../products";
 
 const ProductScreen = () => {
   const [product, setProduct] = useState({});
@@ -11,7 +12,7 @@ const ProductScreen = () => {
 
   useEffect(() => {
     const fetchProduct = async () => {
-      const { data } = await axios.get(`/api/products/${productId}/`);
+      const { data } = await axios.get(`/api/products/${productId}`);
       setProduct(data);
     };
 
