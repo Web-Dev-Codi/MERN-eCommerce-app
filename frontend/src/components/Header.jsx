@@ -3,14 +3,14 @@ import { FaShoppingCart, FaUser } from "react-icons/fa";
 import { LinkContainer } from "react-router-bootstrap";
 import logo from "../assets/logo.png";
 
-export default function Header() {
+const Header = () => {
   return (
     <header>
       <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
         <Container>
           <LinkContainer to="/">
             <Navbar.Brand>
-              <img src={logo} alt="ProShop Logo" />
+              <img src={logo} alt="ProShop" />
               ProShop
             </Navbar.Brand>
           </LinkContainer>
@@ -33,4 +33,6 @@ export default function Header() {
       </Navbar>
     </header>
   );
-}
+};
+
+export default Header;
