@@ -1,3 +1,25 @@
+# Ignore all .env files
+*.env
+
+# Ignore .env files in the root directory
+/.env
+
+# Ignore .env files in all directories
+**/.env
+
+# Ignore .env files in all directories and subdirectories
+**/.env*
+
+# Ignore .env files with any extension
+*.env.*
+
+# Ignore .env files with any extension in all directories
+**/.env.*
+
+# Ignore .env files with any extension in all directories and subdirectories
+**/.env*.*
+
+
 # Logs
 logs
 *.log
@@ -14,11 +36,6 @@ dist-ssr
 # Ignore all node_modules folders
 node_modules
 
-# Ignore the .env file
-env
-*env
-.env.local
-*.env
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
