@@ -1,8 +1,11 @@
 import "dotenv/config";
 import express from "express";
-const port = process.env.PORT || 5000;
+import connectDB from "./config/db.js";
 import products from "./data/products.js";
+const port = process.env.PORT || 5000;
 import cors from "cors";
+
+connectDB();
 
 const app = express();
 
