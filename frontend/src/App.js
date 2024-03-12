@@ -2,7 +2,6 @@ import { Container } from "react-bootstrap";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { Outlet } from "react-router-dom";
-// import HomeScreen from "./screens/HomeScreen"; // new
 
 const App = () => {
   return (
